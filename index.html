@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/output.css">
+</head>
+
+<body class="bg-gray-900 ">
+    <div class="pt-10 w-full h-[455px] bg-[url('/assets/img/fundoHeader.jpeg')] bg-cover bg-center bg-no-repeat ">
+        <div class="w-full bg-transparent h-full flex items-center justify-end">
+            <div class="w-[30%] h-[100%] m-2 flex items-center justify-center flex-col">
+                <h2 class="text-white text-2xl font-bold mb-9">Spaceman</h2>
+                <span class="text-white text-[15px] mb-9">Spaceman (2024) é um drama de ficção científica em que Adam
+                    Sandler
+                    interpreta Jakub, um astronauta que enfrenta o isolamento em uma missão espacial, onde a única
+                    companhia é uma aranha alienígena que o leva a refletir sobre sua vida e relacionamentos.
+                </span>
+                <button class="py-1 px-8 bg-red-700 text-white rounded-full flex items-center justify-center gap-2"><img
+                        src="assets/img/play.png" alt="">Watch
+                    trailer</button>
+            </div>
+            <div class=" w-[20%] h-[90%] m-2 mr-24 rounded-md">
+                <img class="w-full h-full rounded-md" src="assets/img/filmeHeader.jpg" alt="filme">
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full h-10 bg-transparent absolute z-10 top-0 flex items-center justify-between px-16">
+        <img class="h-8" src="assets/img/logo.png" alt="">
+        <div class="flex gap-6 pr-10">
+            <a class="text-white text-lg hover:font-bold font-bold" href="index.html">Principal</a>
+            <a class="text-white text-lg hover:font-bold" href="filme.html">Filmes</a>
+            <a class="text-white text-lg hover:font-bold" href="series.html">Series</a>
+            <a class="text-white text-lg hover:font-bold" href="#">News</a>
+            <a class="text-white text-lg hover:font-bold" href="#">Contacts</a>
+            <a class="text-white text-lg hover:font-bold" href="#">Login In</a>
+        </div>
+    </div>
+
+    <div class="bg-gray-900 p-5 flex items-center justify-between">
+        <div class="flex gap-9">
+            <a class="text-white text-sm flex items-center justify-center gap-2" href="#">
+                Mais Populares
+                <img class="rotate-90 h-2" src="assets/img/play.png" alt="">
+            </a>
+            <a class="text-white text-sm flex items-center justify-center gap-2" href="#">
+                Categorias
+                <img class="rotate-90 h-2" src="assets/img/play.png" alt="">
+            </a>
+            <a class="text-white text-sm flex items-center justify-center gap-2" href="#">
+                Em Breve
+                <img class="rotate-90 h-2" src="assets/img/play.png" alt="">
+            </a>
+        </div>
+
+
+        <div class=" flex items-center justify-center gap-1">
+            <input class="bg-transparent border-white w-28 text-xs focus:outline-none text-white" type="text"
+                placeholder="Procure">
+            <button class="flex justify-center items-center"><img src="assets/img/search.png" alt=""></button>
+        </div>
+
+    </div>
+
+    <div class="h-0.5 w-[97%] bg-gray-500 mx-auto">
+        <div class="h-0.5 w-[17%] bg-red-700"></div>
+    </div>
+
+    <div class="bg-gray-900 flex items-center justify-center">
+        <h1 class="text-white text-[30px] font-bold">Filmes - Populares</h1>
+    </div>
+
+    <div class="bg-gray-900 p-5 grid grid-cols-4 gap-7" id="movie-container">
+    </div>
+
+    <div class="bg-gray-900 p-5 flex items-center justify-center">
+        <h1 class="text-white text-[30px] font-bold">Series - Populares</h1>
+    </div>
+
+    <div class="bg-gray-900 p-5 grid grid-cols-4 gap-7" id="series-container">
+    </div>
+
+</body>
+<!-- axios -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<!-- buscando filmes -->
+<script src="scripts/Main.js"></script>
+
+</html>
